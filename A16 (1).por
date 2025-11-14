@@ -2,10 +2,12 @@ programa {
   funcao inicio() {
   real nota, somaNotas, media  
   inteiro i, numAlunos
-  numAlunos=5
+  escreva("São quantos alunos? ")
+  leia(numAlunos)
+
   somaNotas=0
 
-  para (i=1; i<=5; i++){
+  para (i=1; i<=numAlunos; i++){
   escreva("Digite a nota do aluno ", i, ": ")  
   leia(nota)
   somaNotas=somaNotas+nota
@@ -13,6 +15,6 @@ programa {
   
   media=somaNotas/numAlunos
 
-  escreva("A soma de todas as notas é ", somaNotas, " e a média final dos alunos ", media)
+  escreva("A soma de todas as notas é ", somaNotas, " e a média final dos alunos é ", media)
   }
 }
